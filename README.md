@@ -13,21 +13,26 @@ https://aclanthology.org/2024.lrec-main.118/
     
 T2S目录下：  
     --默认繁简转换（数据集和模型可指定）：  
-      --T2S --direction t2s  --dataset 数据集 test --output output    
-    --T2S --direction s2t train         (参数为默认值)   
+    ```
+    T2S --direction t2s  --dataset 数据集 test --output output  
+    ```
+    ```
+    T2S --direction s2t train         (参数为默认值)   
+    ```
 
 
 ##训练模型：  
     数据集+向量   
     --训练得到W转换矩阵:（MUSE方法）  
-        --python muse_code/unsupervised --src_lang cn --tgt_lang tw --export txt --exp_path output --src_emb vectors-cn.txt  --tgt_emb vectors-tw.txt  
+    ```
+        python muse_code/unsupervised --src_lang cn --tgt_lang tw --export txt --exp_path output --src_emb vectors-cn.txt  --tgt_emb vectors-tw.txt  ```  
     --训练得到最终模型:  
-        --python cli.py --direction s2t/t2s --src_file --tgt_file --mapping_path   train --file model    --data 训练集                        
-    
+        ```python cli.py --direction s2t/t2s --src_file --tgt_file --mapping_path   train --file model    --data 训练集          ```               
+  ```  
 ##eval：python  cli.py  --direction s2t/t2s   --src_file --tgt_file --mapping_path  eval  --model_path model/param-s-tg.ckpt  
 ##test：python cli.py  --direction s2t/t2s  --src_file --tgt_file --mapping_path --dataset  test --model_path  --output output  
-
-##参数定义:  
+```
+参数定义:  
     src_file 输入向量  
     tgt_file 输出向量  
     mapping_path 映射矩阵 .pth  
