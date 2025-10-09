@@ -15,7 +15,7 @@ T2S目录下：
     --默认繁简转换（数据集和模型可指定）：  
     ```
     T2S --direction t2s  --dataset 数据集 test --output output  
-    ```
+    ```  
     ```
     T2S --direction s2t train         (参数为默认值)   
     ```
