@@ -40,9 +40,9 @@ def main():
     # 定义默认配置
     defaults = {
     "s2t": {
-        "src_file": "data/S2T/vectors-cn.txt",
-        "tgt_file": "data/S2T/vectors-tw.txt",
-        "mapping_path": "data/S2T/best_mapping.pth",
+        "src_file": "data/vectors-cn.txt",
+        "tgt_file": "data/vectors-tw.txt",
+        "mapping_path": "data/best_mapping.pth",
         "data": "data/trainset.t.txt",
         "dataset":"data/testset.s.txt",
         "dataset1":"data/testset.t.txt",
@@ -50,9 +50,9 @@ def main():
         "output":"output"
     },                  
     "t2s": {
-        "src_file": "data/T2S/vectors-tw.txt",
-        "tgt_file": "data/T2S/vectors-cn.txt",
-        "mapping_path": "data/T2S/best_mapping.pth",
+        "src_file": "data/vectors-tw.txt",
+        "tgt_file": "data/vectors-cn.txt",
+        "mapping_path": "data/best_mapping.pth",
         "data": "data/trainset.s.txt",
         "dataset":"data/testset.t.txt",
         "dataset1":"data/testset.s.txt",
