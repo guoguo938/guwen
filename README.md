@@ -1,6 +1,6 @@
+### [**An Unsupervised Framework for Adaptive Context-aware Simplified-Traditional Chinese Character Conversion**](https://aclanthology.org/2024.lrec-main.118/ )  
 
-''An Unsupervised Framework for Adaptive Context-aware Simplified-Traditional Chinese Character Conversion   ''  
-https://aclanthology.org/2024.lrec-main.118/   
+
 下载训练好的模型和训练集分别保存在model 和data文件夹下：  
   -模型：https://huggingface.co/guoguo938/guwen-model  
   -数据集：https://huggingface.co/guoguo938/guwen-data  
